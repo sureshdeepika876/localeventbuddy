@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Local Event Buddy</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ✅ Axios loaded before your script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Local Event Buddy</h1>
+
+    <form id="buddyForm">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required /><br/><br/>
+
+      <label for="event">Event Name:</label><br/>
+      <input type="text" id="event" name="event" required /><br/><br/>
+
+      <label for="location">Location:</label><br/>
+      <input type="text" id="location" name="location" required /><br/><br/>
+
+      <label for="datetime">Date & Time:</label><br/>
+      <input type="datetime-local" id="datetime" name="datetime" required /><br/><br/>
+
+      <button type="submit">Join as Buddy</button>
+    </form>
+
+    <div id="message" style="margin-top: 20px;"></div>
+  </div>
+</body>
+</html>
